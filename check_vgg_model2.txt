@@ -1,0 +1,75 @@
+37
+0
+3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+2
+kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False
+0
+64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+2
+kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False
+0
+128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+2
+kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False
+0
+256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+2
+kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False
+0
+512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+0
+512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+1
+inplace=True
+2
+kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False
+3
+output_size=(7, 7)
+4
+in_features=25088, out_features=4096, bias=True
+1
+inplace=True
+4
+in_features=4096, out_features=4096, bias=True
+1
+inplace=True
+4
+in_features=4096, out_features=1000, bias=True

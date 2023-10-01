@@ -1,0 +1,59 @@
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test.o -fopenmp -c cnn_inference_f32.c
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test -fopenmp inference_test.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test_no_mlm.o -fopenmp -c cnn_inference_f32.c
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test_no_mlm -fopenmp inference_test_no_mlm.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test-cpp.o -fopenmp -c cnn_inference_f32.cpp
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o inference_test-cpp -fopenmp inference_test-cpp.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o training_test.o -fopenmp -c cpu_cnn_training_f32.c
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o training_test -fopenmp training_test.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o started.o -fopenmp -c getting_started.cpp
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o started -fopenmp started.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++ -g -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16.o -fopenmp -c cpu_training_custom.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16.o -fopenmp -c cpu_training_custom.cpp
+g++ -g -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16 -fopenmp vgg16.o -L/home/ydy/oneDNN/build/src -ldnnl
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16 -fopenmp vgg16.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf.o -fopenmp -c cpu_inference_custom.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf -fopenmp vgg16_inf.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o cpu_vgg16_inference.o -fopenmp -c cpu_vgg16_inference.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o cpu_vgg16_inference -fopenmp cpu_vgg16_inference.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_inf.o -fopenmp -c inference_from_module_list.cpp
+g++ -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_inf -fopenmp resnet_inf.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_inf_no_mlm.o -fopenmp -c inference_from_module_list_no_mlm.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_inf_no_mlm -fopenmp resnet_inf_no_mlm.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg_inf.o -fopenmp -c vgg16_inf_from_txt.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg_inf -fopenmp vgg_inf.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg_inf_no_mlm.o -fopenmp -c vgg16_inf_from_txt_no_mlm.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg_inf_no_mlm -fopenmp vgg_inf_no_mlm.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_short.o -fopenmp -c inference_from_module_list.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o resnet_short -fopenmp resnet_short.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+
+------------------- vgg16
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf.o -fopenmp -c inference_from_module_list.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf -fopenmp vgg16_inf.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf_no_mlm.o -fopenmp -c inference_from_module_list_no_mlm.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o vgg16_inf_no_mlm -fopenmp vgg16_inf_no_mlm.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+------------------- googlenet
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o google_inf.o -fopenmp -c inference_from_module_list.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o google_inf -fopenmp google_inf.o -L/home/ydy/oneDNN/build/src -ldnnl
+
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o google_inf_no_mlm.o -fopenmp -c inference_from_module_list_no_mlm.cpp
+g++  -I/home/ydy/oneDNN/build/include -I/home/ydy/oneDNN/include -O0 -o google_inf_no_mlm -fopenmp google_inf_no_mlm.o -L/home/ydy/oneDNN/build/src -ldnnl
